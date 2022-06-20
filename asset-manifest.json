@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/maeditt-app/static/css/main.2dbd8453.css",
+    "main.js": "/maeditt-app/static/js/main.39e04ad9.js",
+    "index.html": "/maeditt-app/index.html",
+    "main.2dbd8453.css.map": "/maeditt-app/static/css/main.2dbd8453.css.map",
+    "main.39e04ad9.js.map": "/maeditt-app/static/js/main.39e04ad9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dbd8453.css",
+    "static/js/main.39e04ad9.js"
+  ]
+}
