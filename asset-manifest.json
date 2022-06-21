@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/maeditt-app/static/css/main.2dbd8453.css",
-    "main.js": "/maeditt-app/static/js/main.39e04ad9.js",
+    "main.css": "/maeditt-app/static/css/main.acff4a86.css",
+    "main.js": "/maeditt-app/static/js/main.de169aa8.js",
     "index.html": "/maeditt-app/index.html",
-    "main.2dbd8453.css.map": "/maeditt-app/static/css/main.2dbd8453.css.map",
-    "main.39e04ad9.js.map": "/maeditt-app/static/js/main.39e04ad9.js.map"
+    "main.acff4a86.css.map": "/maeditt-app/static/css/main.acff4a86.css.map",
+    "main.de169aa8.js.map": "/maeditt-app/static/js/main.de169aa8.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dbd8453.css",
-    "static/js/main.39e04ad9.js"
+    "static/css/main.acff4a86.css",
+    "static/js/main.de169aa8.js"
   ]
 }
