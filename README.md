@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Maeditt App
+Maeditt allows users to sign up, sign in, submit posts, like posts, comment on posts, and add friends.
+Maeditt was made in ReactJs and is using [maeditt backend](https://github.com/Tanzeb9277/maeditt-backend) which is responsible for serving, storing, and organizing data.  
+[Live Demo](https://tanzeb9277.github.io/maeditt-app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
