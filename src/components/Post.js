@@ -126,15 +126,15 @@ function Post(props){
                         <h3>{props.text}</h3>
                     </div>
                     <div className='post-img'>
-                        <img id={props.path}/>
+                        <img src={props.path}/>
                     </div>
                     <div className='new-comment'>
-                        <form  method='post'>
-                        <input type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
-                        <button data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
+                        <form className='comment-form' method='post'>
+                        <input className='new-comment' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
+                        <button className='comment-button' data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
                         </form>
                     </div>
-                    <button onClick={getComments} data-postid={props.postid}>Load Comments</button>
+                    <button className='load-comments' onClick={getComments} data-postid={props.postid}>Load Comments</button>
                 </div>
             </div>
         )
@@ -142,7 +142,7 @@ function Post(props){
             <div className="post">
                 <div className='sidebar'>
                     <div className='like'>
-                        <LineIcon name="lni lni-heart" className={props.icon} onClick={liked} data-liked={props.liked} data-postid={props.postid}/>
+                        <LineIcon name="lni lni-heart" style={props.color} className={props.icon} onClick={liked} data-liked={props.liked} data-postid={props.postid}/>
                     </div>
                     <div className='share'>
                         <LineIcon name="lni lni-share-alt-1" />
@@ -164,12 +164,12 @@ function Post(props){
                         <h3>{props.text}</h3>
                     </div>
                     <div className='post-img'>
-                        <img id={props.path}/>
+                        <img src={props.path}/>
                     </div>
                     <div className='new-comment'>
-                        <form  method='post'>
-                        <input type='text' name='text' placeholder='Write a comment...' onChange={(e) => setNewComment(e.target.value)}></input>
-                        <button data-postUrl={props.postUrl} onClick={postComment} >Comment</button>
+                    <form className='comment-form' method='post'>
+                        <input className='new-comment' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
+                        <button className='comment-button' data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
                         </form>
                     </div>
                     

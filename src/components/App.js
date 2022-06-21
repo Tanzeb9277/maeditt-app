@@ -87,12 +87,14 @@ function App(props) {
           </Link>
         </div>
         {posts.map((post) => {
+          console.log(post)
           if(post.liked == true)
               return <Post
                 postid={post._id}
                 user={post.user.username}
                 title={post.title}
                 text={post.text}
+                path={post.img}
                 icon={'lni lni-lni lni-heart-filled size-md'}
                 liked={'true'}
                 color={{color:'#ec5451'}}
@@ -104,6 +106,7 @@ function App(props) {
                 user={post.user.username}
                 title={post.title}
                 text={post.text}
+                path={post.img}
                 icon={'lni lni-lni lni-heart size-md'}
                 liked={'false'}
                 postUrl = {`https://hidden-depths-13529.herokuapp.com/${currentUserId}/comment/${post._id}`}

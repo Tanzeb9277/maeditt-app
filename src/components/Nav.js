@@ -41,7 +41,7 @@ import {useParams} from "react-router-dom";
         return(
             <nav>
                 <Link to={`/${currentUserId}/feed`} className='logo'>
-                    <h2>maettid</h2>
+                    <h2>maeditt</h2>
                 </Link>
                 <div className='search'>
                     <input type="text" placeholder='Search' id='search-bar'/>
