@@ -134,7 +134,10 @@ function Post(props){
                         <button className='comment-button' data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
                         </form>
                     </div>
+                    <div className='load-container'>
                     <button className='load-comments' onClick={getComments} data-postid={props.postid}>Load Comments</button>
+                    </div>
+                   
                 </div>
             </div>
         )

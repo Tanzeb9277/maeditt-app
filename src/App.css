@@ -372,7 +372,7 @@ a {
 .new-comment{
   height: 40px;
   flex: 2 1 0%;
-  padding: 10px;
+  padding: 10px 0;
   width: 90%;
 }
 
@@ -399,6 +399,12 @@ a {
   border-radius: 6px;
 }
 
+.load-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
 .load-comments{
   width: 25%;
   margin: 0 34.15%;
@@ -410,15 +416,32 @@ a {
   border-radius: 15px;
 }
 
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+hr {
+  width: 100%;
+  color: #d9d8d8;
+}
+
+.comment-date{
+  font-size: calc(8px + .15vw);
+  color: grey;
+}
+
 .profile-container {
   display: flex;
   flex-direction: column;
   width: calc(250px + 15vw);
-  margin: auto;
+  margin: 20px auto;
   align-items: center;
   gap: 20px;
   background-color: whitesmoke;
   padding: 20px 0;
+border-radius: 10px;
 }
 
 .profile-img{
@@ -560,4 +583,92 @@ a {
 .submit-post button:hover{
     cursor: pointer;
     background-color: #3b9b9c;
+}
+
+
+@media (max-width: 1024px) {
+
+  .posts {
+  
+      width: 100%;
+  
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .login-card{
+    width: 100%;
+  }
+  .login-form form button {
+    width: 50%;
+  }
+  .login-form form {
+    width: 90%;
+
+  }
+  .signup-form form {
+    width: 90%;
+  }
+
+  .signup-form form button {
+    width: 50%;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .logo {
+    justify-content: baseline;
+    margin: 0 10px;
+  }
+  .avatar {
+    height: 30px;
+    width: 32px;
+  }
+
+  .App {
+    width: 100vw;
+  }
+
+  .create {
+    width: 95%;
+  }
+  .post {
+    width: 95%;
+  }
+
+  .main{
+    gap: 25px;
+  }
+  .comment-button {
+    width: 35%;
+  }
+
+  .load-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .load-comments {
+    min-width: 200px;
+  }
+
+  .new-comment {
+    height: 40px;
+    flex: 2 1;
+    padding: 10px 0px;
+    width: 90%;
+  }
+
+  .create-post {
+    width: 90%;
+    margin: 40% auto;
+  }
+
+
+
 }
