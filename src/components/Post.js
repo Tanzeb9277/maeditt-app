@@ -130,7 +130,7 @@ function Post(props){
                     </div>
                     <div className='new-comment'>
                         <form className='comment-form' method='post'>
-                        <input className='new-comment' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
+                        <input className='comment-input' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
                         <button className='comment-button' data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
                         </form>
                     </div>
@@ -168,7 +168,7 @@ function Post(props){
                     </div>
                     <div className='new-comment'>
                     <form className='comment-form' method='post'>
-                        <input className='new-comment' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
+                        <input className='comment-input' type='text' name='text' placeholder='Write a comment...' value={newComment} onChange={(e) => setNewComment(e.target.value)}></input>
                         <button className='comment-button' data-postUrl={props.postUrl} data-postid={props.postid} onClick={postComment} >Comment</button>
                         </form>
                     </div>

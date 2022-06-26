@@ -7,7 +7,7 @@ import CreatePost from "./components/CreatePost";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter basename="/maeditt-app">
+    <BrowserRouter basename="/maeditt-app" >
       <Routes>
         <Route path="/:currentUserId/feed" element={
           <div>
